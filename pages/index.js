@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import { toast } from 'react-toastify';
@@ -44,10 +44,11 @@ const reg = {
 
 const Index = () => {
   const { user } = useUser();
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
-    user && router.replace('/profile');
+    // user && router.push('/profile');
+    user && Router.push('/profile');
   }, [user]);
 
   const [init, setInit] = useState(true);
@@ -81,6 +82,7 @@ const Index = () => {
     if (init) {
       const response = await signInUser(formData);
       if (response.ok) {
+        console.log('ok');
         setLoading(false);
       } else {
         setLoading(false);
@@ -89,6 +91,7 @@ const Index = () => {
     } else {
       const response = await signUpUser(formData);
       if (response.ok) {
+        console.log('ok');
         toast.success('Successfully Registered & Logged In!');
         setLoading(false);
       } else {
@@ -100,6 +103,7 @@ const Index = () => {
 
   const handleResponse = (response) => {
     if (response.ok) {
+      console.log('ok');
     } else {
       toast.error(response);
     }
