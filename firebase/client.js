@@ -222,13 +222,11 @@ const createUserCollection = async (response) => {
       displayName: response.displayName,
       email: response.email,
       phoneNumber: response.phoneNumber,
-      // photoURL: response.photoURL !== null ? response.photoURL : defaultAvatar,
+      photoURL: response.photoURL !== null ? response.photoURL : defaultAvatar,
       bio: null,
       // provider: response.providerData[0].providerId,
     };
-    console.log('data create', fields);
-    const create = await db.collection('users').doc(response.uid).set(fields);
-    console.log('create', create);
+    await db.collection('users').doc(response.uid).set(fields);
   } catch (error) {
     // console.log(error);
     return error;
