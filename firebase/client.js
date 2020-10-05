@@ -41,6 +41,7 @@ const getUser = async (user) => {
     doc = await db.collection('users').doc(user.uid).get();
 
     if (!doc.exists) {
+      console.log('no existe');
       await createUserCollection(user);
       doc = await db.collection('users').doc(user.uid).get();
     }
@@ -57,7 +58,7 @@ const getUser = async (user) => {
     // }
 
     console.log('user', user);
-    console.log('doc', doc);
+    console.log('doc', doc.data());
     return doc;
   } catch (error) {
     // console.log(error);
@@ -225,6 +226,7 @@ const createUserCollection = async (response) => {
       bio: null,
       // provider: response.providerData[0].providerId,
     };
+    console.log('data create', response);
     await db.collection('users').doc(response.uid).set(fields);
   } catch (error) {
     // console.log(error);
