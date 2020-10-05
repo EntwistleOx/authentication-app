@@ -56,6 +56,8 @@ const getUser = async (user) => {
     //   }
     // }
 
+    console.log('user', user);
+    console.log('doc', userDoc.data());
     return doc;
   } catch (error) {
     // console.log(error);
