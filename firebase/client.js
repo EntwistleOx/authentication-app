@@ -222,7 +222,7 @@ const createUserCollection = async (response) => {
       displayName: response.displayName,
       email: response.email,
       phoneNumber: response.phoneNumber,
-      photoURL: response.photoURL !== null ? response.photoURL : defaultAvatar,
+      // photoURL: response.photoURL !== null ? response.photoURL : defaultAvatar,
       bio: null,
       // provider: response.providerData[0].providerId,
     };
