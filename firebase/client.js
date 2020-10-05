@@ -226,8 +226,9 @@ const createUserCollection = async (response) => {
       bio: null,
       // provider: response.providerData[0].providerId,
     };
-    console.log('data create', response);
-    await db.collection('users').doc(response.uid).set(fields);
+    console.log('data create', fields);
+    const create = await db.collection('users').doc(response.uid).set(fields);
+    console.log('create', create);
   } catch (error) {
     // console.log(error);
     return error;
