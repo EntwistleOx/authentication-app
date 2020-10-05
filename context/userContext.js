@@ -1,11 +1,11 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { onAuthStateChanged } from '../firebase/client';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const router = useRouter();
+  // const router = useRouter();
 
   const providerValue = useMemo(() => ({ user, setUser }), [user, setUser]);
 
