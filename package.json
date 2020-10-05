@@ -1,0 +1,21 @@
+{
+  "name": "authentication-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "firebase": "^7.22.0",
+    "firebase-admin": "^9.2.0",
+    "next": "9.5.3",
+    "nookies": "^2.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-loading-skeleton": "^2.1.1",
+    "react-modal": "^3.11.2",
+    "react-toastify": "^6.0.8"
+  }
+}

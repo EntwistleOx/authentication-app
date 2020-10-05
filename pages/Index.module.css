@@ -1,0 +1,29 @@
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 1rem;
+  min-height: 96vh;
+}
+
+/* Desktop */
+@media only screen and (min-width: 850px) {
+  .container {
+    min-height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 505px;
+  }
+
+  .card {
+    border: 1px solid #dedede;
+    border-radius: 24px;
+    padding: 40px 60px;
+    min-height: 0vh;
+    width: 473px;
+  }
+}

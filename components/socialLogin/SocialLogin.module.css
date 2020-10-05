@@ -1,0 +1,25 @@
+.socials {
+  margin: 22px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.socialBtn {
+  border: none;
+  background: transparent;
+  margin: 0 0.6rem;
+  padding: 0;
+  outline: none;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.socialBtn:hover {
+  opacity: 0.8;
+}
+
+.socialBtn:active {
+  opacity: 1;
+}
