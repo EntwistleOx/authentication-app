@@ -48,6 +48,7 @@ const Index = () => {
 
   useEffect(() => {
     // user && router.push('/profile');
+    console.log(user);
     user && Router.push('/profile');
   }, [user]);
 
