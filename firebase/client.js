@@ -3,7 +3,16 @@ import 'firebase/auth';
 import 'firebase/firestore';
 import 'firebase/storage';
 
-const firebaseConfig = JSON.parse(process.env.NEXT_PUBLIC_FIREBASE_CONFIG);
+const firebaseConfig = {
+  apiKey: 'AIzaSyABZmvnDsWyLitDWqcfXAMe_vs3O5ejFn4',
+  authDomain: 'entwistle-auth-app.firebaseapp.com',
+  databaseURL: 'https://entwistle-auth-app.firebaseio.com',
+  projectId: 'entwistle-auth-app',
+  storageBucket: 'entwistle-auth-app.appspot.com',
+  messagingSenderId: '308248972615',
+  appId: '1:308248972615:web:9cedf0a67b7fcc5bb81062',
+  measurementId: 'G-DC9YB7JZKG',
+};
 
 !firebase.apps.length && firebase.initializeApp(firebaseConfig);
 
