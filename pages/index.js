@@ -44,12 +44,14 @@ const reg = {
 
 const Index = () => {
   const { user } = useUser();
-  // const router = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     // user && router.push('/profile');
-    console.log(user);
-    user && Router.push('/profile');
+    const redirect = () => {
+      user && router.push('/profile');
+    };
+    redirect();
   }, [user]);
 
   const [init, setInit] = useState(true);
