@@ -6,34 +6,34 @@
 
 <div align="center">
   
-#### Desktop Login
+## Desktop Login
 ![Desktop Preview for the Authentication App](./sources/login.png)
 
-#### Desktop Register
+## Desktop Register
 
 ![Desktop Preview for the Authentication App](./sources/register.png)
 
-#### Desktop Profile
+## Desktop Profile
 
 ![Desktop Preview for the Authentication App](./sources/profile.png)
 
-#### Desktop Edit
+## Desktop Edit
 
 ![Desktop Preview for the Authentication App](./sources/edit.png)
 
-#### Mobile Login
+## Mobile Login
 
 ![Desktop Preview for the Authentication App](./sources/mobile/login.png)
 
-#### Mobile Register
+## Mobile Register
 
 ![Desktop Preview for the Authentication App](./sources/mobile/register.png)
 
-#### Mobile Profile
+## Mobile Profile
 
 ![Desktop Preview for the Authentication App](./sources/mobile/profile.png)
 
-#### Mobile Edit
+## Mobile Edit
 
 ![Desktop Preview for the Authentication App](./sources/mobile/edit.png)
 
